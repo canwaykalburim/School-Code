@@ -1,0 +1,7 @@
+﻿  main.c
+c:\users\dsm2018\source\repos\pointerpractice\pointerpractice\main.c(9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+c:\users\dsm2018\source\repos\pointerpractice\pointerpractice\main.c(9): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+c:\users\dsm2018\source\repos\pointerpractice\pointerpractice\main.c(19): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'int *'입니다.
+c:\users\dsm2018\source\repos\pointerpractice\pointerpractice\main.c(19): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 2의 형식이 'int *'입니다.
+c:\users\dsm2018\source\repos\pointerpractice\pointerpractice\main.c(19): warning C4477: 'printf' : 서식 문자열 '%x'에 'unsigned int' 형식의 인수가 필요하지만 variadic 인수 3의 형식이 'int *'입니다.
+  PointerPractice.vcxproj -> C:\Users\DSM2018\source\repos\PointerPractice\Debug\PointerPractice.exe
