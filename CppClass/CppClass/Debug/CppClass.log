@@ -1,0 +1,4 @@
+﻿  main.cpp
+c:\users\dsm2018\source\repos\cppclass\cppclass\main.cpp(92): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\users\dsm2018\source\repos\cppclass\cppclass\main.cpp(98): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+  CppClass.vcxproj -> C:\Users\DSM2018\source\repos\CppClass\Debug\CppClass.exe
