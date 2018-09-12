@@ -1,0 +1,6 @@
+﻿  main.c
+c:\users\dsm2018\desktop\소스 코드\school_code\structurepractice2\structurepractice2\main.c(21): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
+c:\users\dsm2018\desktop\소스 코드\school_code\structurepractice2\structurepractice2\main.c(26): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.17134.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
+  StructurePractice2.vcxproj -> C:\Users\DSM2018\Desktop\소스 코드\School_Code\StructurePractice2\Debug\StructurePractice2.exe
