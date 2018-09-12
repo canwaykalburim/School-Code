@@ -226,6 +226,18 @@ void Pro19() {
 	cout << "--------------\n";
 }
 
+void Pro20() {
+	const int Length = 30;
+	char Name[Length];
+	char Address[Length];
+
+	cout << "이름: ";
+	cin.getline(Name, Length);
+	cout << "주소: ";
+	cin.getline(Address, Length);
+	cout << "이름은" << Name << "이고, " << "주소는" << Address << "입니다." << endl;
+}
+
 int main(void) {
 	//Pro();
 	//Pro2();
@@ -245,7 +257,8 @@ int main(void) {
 	//Pro16();
 	//Pro17();
 	//Pro18();
-	Pro19();
+	//Pro19();
+	Pro20();
 
 	return 0;
 }
