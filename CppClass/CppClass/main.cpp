@@ -1,7 +1,10 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 #define size_d 100
+#define SizeName 10
+const int SizeAdd = 20;
 const int size_c = 200;
 
 extern int x = 50 , y = 2;
@@ -140,6 +143,89 @@ void Pro13() {
 		cout << "주말이 아닙니다";
 }
 
+// 3일차
+void Pro14() {
+	char Name[SizeName];
+	char Address[SizeAdd];
+
+	cout << "이름: ";
+	cin >> Name;
+	cout << "주소: ";
+	cin	>> Address;
+	cout << "이름은" << Name <<"이고, " << "주소는" <<Address << "입니다." << endl;
+}
+
+void Pro15() {
+	int x = 12, y = 1234;
+
+	cout << "10진수:" << dec << x << endl;
+	cout << "8진수:" << oct << x << endl;
+	cout << "16진수:" << hex << x << endl;
+	cout << endl;
+	cout << "1234567890" << endl;
+	cout << dec << y << endl;
+	cout << setw(10) << y << endl;
+}
+
+void Pro16() {
+	float x = 12.30;
+	float y = 10.0 + 2.0 / 3.0;
+	cout.precision(4);
+	cout << "x: " << x << endl;
+	cout << "y: " << y << endl;
+}
+
+void Pro17() {
+	float x = 12.30;
+	float y = 10.0 + 2.0 / 3.0;
+	cout.setf(ios::showpoint);
+	cout << "x: " << x << endl;
+	cout << "y: " << y << endl;
+	cout.precision(4);
+	cout << "x: " << x << endl;
+	cout << "y: " << y << endl;
+}
+
+void Pro18() {
+	int ion = 30;
+
+	cout << "The Number of ion" << endl;
+	cout.setf(ios::showpos);
+	cout << ion << endl;
+	cout << hex << ion << endl;
+	cout.setf(ios::uppercase);
+	cout << hex << ion << endl;
+	cout.setf(ios::showbase);
+	cout << ion << hex << endl;
+}
+
+void Pro19() {
+	int ion = 0;
+
+	cout << "자리 위치 지정\n" << endl;
+	cout << "--------------\n";
+	cout.setf(ios::showpos);
+	cout.setf(ios::right, ios::adjustfield);
+	cout.setf(ios::showpoint);
+	while (ion < 3) {
+		cout.width(13);
+		cout << ++ion << endl;
+	}
+	cout << "--------------\n";
+	cout.setf(ios::left, ios::adjustfield);
+	while (ion > 0) {
+		cout.width(13);
+		cout << ion-- << endl;
+	}
+	cout << "--------------\n";
+	cout.setf(ios::internal, ios::adjustfield);
+	while (ion < 3) {
+		cout.width(13);
+		cout << ++ion << endl;
+	}
+	cout << "--------------\n";
+}
+
 int main(void) {
 	//Pro();
 	//Pro2();
@@ -153,6 +239,13 @@ int main(void) {
 	//Pro10();
 	//Pro11();
 	//Pro12();
-	Pro13();
+	//Pro13();
+	//Pro14();
+	//Pro15();
+	//Pro16();
+	//Pro17();
+	//Pro18();
+	Pro19();
+
 	return 0;
 }
