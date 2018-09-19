@@ -1,0 +1,3 @@
+﻿  main.cpp
+c:\users\dsm2018\source\repos\학동쌤과 cpp하기\학동쌤과 cpp하기\main.cpp(112): warning C4717: 'menu': 모든 제어 경로에서 재귀적입니다. 함수로 인해 런타임 스택 오버플로가 발생합니다.
+  학동쌤과 CPP하기.vcxproj -> C:\Users\DSM2018\source\repos\학동쌤과 CPP하기\Debug\학동쌤과 CPP하기.exe
