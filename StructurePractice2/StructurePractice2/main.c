@@ -66,14 +66,9 @@ void Pro3() {
 	printf("pos1 = {%d, %d} , pos2 = {%d, %d}", pos1.xPos, pos1.yPos, pos2.xPos, pos2.yPos);
 }
 
-void Pro4() {
-
-}
-
 int main(void) {
 	//Pro();
 	//Pro2();
 	//Pro3();
-	Pro4();
 	return 0;
 }
