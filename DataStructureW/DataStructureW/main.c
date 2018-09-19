@@ -57,18 +57,32 @@ void SubMain() {
 	BTreeNode * bt2 = MakeBTreeNode();
 	BTreeNode * bt3 = MakeBTreeNode();
 	BTreeNode * bt4 = MakeBTreeNode();
+	BTreeNode * bt5 = MakeBTreeNode();
+	BTreeNode * bt6 = MakeBTreeNode();
+	BTreeNode * bt7 = MakeBTreeNode();
 
 	SetData(bt1, 1);
 	SetData(bt2, 2);
 	SetData(bt3, 3);
 	SetData(bt4, 4);
+	SetData(bt5, 5);
+	SetData(bt6, 6);
+	SetData(bt7, 7);
 
 	MakeLeft(bt1, bt2);
 	MakeRight(bt1, bt3);
 	MakeLeft(bt2, bt4);
+	MakeRight(bt2, bt5);
+	MakeLeft(bt3, bt6);
+	MakeRight(bt3, bt7);
 
-	printf("%d\n", GetData(GetLeft(bt1)));
-	printf("%d\n", GetData(GetLeft(GetLeft(bt1))));
+	printf("         %d\n", GetData(bt1));
+	printf("     %d       ", GetData(GetLeft(bt1)));
+	printf("%d\n", GetData(GetRight(bt1)));
+	printf("   %d", GetData(GetLeft(GetLeft(bt1))));
+	printf("   %d", GetData(GetRight(GetLeft(bt1))));
+	printf("   %d", GetData(GetLeft(GetRight(bt1))));
+	printf("   %d", GetData(GetRight(GetRight(bt1))));
 }
 
 int main(void) {
