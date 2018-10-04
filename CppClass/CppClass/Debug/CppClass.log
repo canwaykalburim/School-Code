@@ -5,4 +5,5 @@ c:\users\dsm2018\desktop\소스 코드\school_code\cppclass\cppclass\main.cpp(17
 c:\users\dsm2018\desktop\소스 코드\school_code\cppclass\cppclass\main.cpp(172): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
 c:\users\dsm2018\desktop\소스 코드\school_code\cppclass\cppclass\main.cpp(179): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
 c:\users\dsm2018\desktop\소스 코드\school_code\cppclass\cppclass\main.cpp(180): warning C4305: '초기화 중': 'double'에서 'float'(으)로 잘립니다.
+c:\users\dsm2018\desktop\소스 코드\school_code\cppclass\cppclass\main.cpp(245): warning C4804: '>': 연산에 'bool' 형식을 사용하는 것은 안전하지 않습니다.
   CppClass.vcxproj -> C:\Users\DSM2018\Desktop\소스 코드\School_Code\CppClass\Debug\CppClass.exe

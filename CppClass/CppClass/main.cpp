@@ -235,7 +235,68 @@ void Pro20() {
 	cin.getline(Name, Length);
 	cout << "주소: ";
 	cin.getline(Address, Length);
-	cout << "이름은" << Name << "이고, " << "주소는" << Address << "입니다." << endl;
+	cout << "이름은 " << Name << "이고, " << "주소는 " << Address << "입니다." << endl;
+}
+
+// 4일차
+void Pro21() {
+	int x = 12, y = 8, z = 3, r1, r2;
+	char ch = 'b';
+	r1 = x > y > z;
+	r2 = (ch == 'a' + 1);
+	cout << "r1 = " << r1 << endl;
+	cout << "r2 = " << r2 << endl;
+}
+
+void Pro22() {
+	int a = 10, b = 9, c;
+	a++;	b++;
+	cout << "a: " << a << " b: " << b << endl;
+	a--;	b--;
+	cout << "a: " << a << " b: " << b << endl;
+
+	++a;	++b;
+	cout << "a: " << a << " b: " << b << endl;
+	c = a++;	++b;
+	cout << "a: " << c << " b: " << b << endl;
+}
+
+void Pro23() {
+	int x, y, r1, r2;
+	x = 5;	y = 7;
+	r1 = ++x - 1;
+	r2 = x++ + --y;
+	cout << "r1: " << r1 << endl;
+	cout << "r2: " << r2 << endl;
+
+}
+
+void Pro24() {
+	for (int fr = 2; fr < 10; fr++) {
+		for (int bh = 1; bh < 10; bh++) {
+			cout << fr << " X "<< bh << "= " << fr * bh << endl;
+		}
+		cout << endl;
+	}
+}
+
+void Pro25() {
+	int nInput;
+	cin >> nInput;
+	cout << endl;
+	for (int Ust = 1; Ust <= nInput * 2; Ust++) {
+		if (Ust <= nInput) {
+			for (int Dst = 1; Dst <= Ust; Dst++) {
+				cout << "*";
+			}
+		}
+		else {
+			for (int Dst = nInput * 2; Dst >= Ust; Dst--) {
+				cout << "*";
+			}
+		}
+		cout << endl;
+	}
 }
 
 int main(void) {
@@ -258,7 +319,12 @@ int main(void) {
 	//Pro17();
 	//Pro18();
 	//Pro19();
-	Pro20();
+	//Pro20();
+	//Pro21();
+	//Pro22();
+	//Pro23();
+	//Pro24();
+	Pro25();
 
 	return 0;
 }
