@@ -52,6 +52,30 @@ void MakeRight(BTreeNode * main, BTreeNode * sub) {
 	main->right = sub;
 }
 
+void InorderTraverse(BTreeNode * bt) {
+	if (bt == NULL)	return;
+
+	InorderTraverse(bt->left);
+	printf("%d  \n", bt->data);
+	InorderTraverse(bt->right);
+}
+
+void PreorderTraverse(BTreeNode * bt) {
+	if (bt == NULL)	return;
+
+	printf("%d  \n", bt ->data);
+	PreorderTraverse(bt ->left );
+	PreorderTraverse(bt ->right );
+}
+
+void PostorderTraverse(BTreeNode * bt) {
+	if (bt == NULL)	return;
+
+	PostorderTraverse(bt ->left);
+	PostorderTraverse(bt ->right);
+	printf("%d  \n", bt->data);
+}
+
 void SubMain() {
 	BTreeNode * bt1 = MakeBTreeNode();
 	BTreeNode * bt2 = MakeBTreeNode();
@@ -85,8 +109,29 @@ void SubMain() {
 	printf("   %d", GetData(GetRight(GetRight(bt1))));
 }
 
+void SubMain2() {
+	BTreeNode * bt1 = MakeBTreeNode();
+	BTreeNode * bt2 = MakeBTreeNode();
+	BTreeNode * bt3 = MakeBTreeNode();
+	BTreeNode * bt4 = MakeBTreeNode();
+
+	SetData(bt1, 1);
+	SetData(bt2, 2);
+	SetData(bt3, 3);
+	SetData(bt4, 4);
+
+	MakeLeft(bt1, bt2);
+	MakeRight(bt1, bt3);
+	MakeLeft(bt2, bt4);
+
+	//InorderTraverse(bt1);
+	//PreorderTraverse(bt1);
+	//PostorderTraverse(bt1);
+}
+
 int main(void) {
 	//WarmingUp();
-	SubMain();
+	//SubMain();
+	SubMain2();
 	return 0;
 }
