@@ -1,4 +1,6 @@
 #include "common.h"
+#include "ListBaseStack.h"
+#include "BinaryTree2.h"
 
 BTreeNode * MakeExpTree(char exp[])
 {

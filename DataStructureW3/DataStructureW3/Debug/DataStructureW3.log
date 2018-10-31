@@ -1,0 +1,11 @@
+﻿  BinarySearchTree.c
+  main.c
+  코드를 생성하고 있습니다...
+BinarySearchTree.obj : error LNK2019: _MakeBTreeNode 외부 기호(참조 위치: _BSTInsert 함수)에서 확인하지 못했습니다.
+BinarySearchTree.obj : error LNK2019: _GetData 외부 기호(참조 위치: _BSTGetNodeData 함수)에서 확인하지 못했습니다.
+BinarySearchTree.obj : error LNK2019: _SetData 외부 기호(참조 위치: _BSTInsert 함수)에서 확인하지 못했습니다.
+BinarySearchTree.obj : error LNK2019: _GetLeftSubTree 외부 기호(참조 위치: _BSTInsert 함수)에서 확인하지 못했습니다.
+BinarySearchTree.obj : error LNK2019: _GetRightSubTree 외부 기호(참조 위치: _BSTInsert 함수)에서 확인하지 못했습니다.
+BinarySearchTree.obj : error LNK2019: _MakeLeftSubTree 외부 기호(참조 위치: _BSTInsert 함수)에서 확인하지 못했습니다.
+BinarySearchTree.obj : error LNK2019: _MakeRightSubTree 외부 기호(참조 위치: _BSTInsert 함수)에서 확인하지 못했습니다.
+C:\Users\DSM2018\Desktop\소스 코드\School_Code\DataStructureW3\Debug\DataStructureW3.exe : fatal error LNK1120: 7개의 확인할 수 없는 외부 참조입니다.
