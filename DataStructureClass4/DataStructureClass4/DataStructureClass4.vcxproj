@@ -149,7 +149,7 @@
       <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
     </ClCompile>
     <ClCompile Include="ListBaseStack.c" />
-    <ClCompile Include="main.c" />
+    <ClCompile Include="ListBaseStackMain.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h">
