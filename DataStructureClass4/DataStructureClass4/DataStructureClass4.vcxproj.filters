@@ -27,6 +27,9 @@
     <ClCompile Include="BinaryTree.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="ListBaseStack.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExpressionTree.h">

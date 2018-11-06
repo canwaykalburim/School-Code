@@ -60,3 +60,13 @@ void InorderTraverse(BTreeNode * bt, VisitFuncPtr action)
 	if (bt == NULL)
 		return;
 }
+
+void PostorderTraverse(BTreeNode * bt, VisitFuncPtr action)
+{
+	if (bt == NULL)	
+		return;
+
+	PostorderTraverse(bt->left, action);
+	PostorderTraverse(bt->right, action);
+	action(bt->data);
+}

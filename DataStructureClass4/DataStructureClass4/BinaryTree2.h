@@ -24,6 +24,6 @@ typedef void VisitFuncPtr(BTData data);
 
 void PreorderTraverse(BTreeNode * bt, VisitFuncPtr action);
 void InorderTraverse(BTreeNode * bt, VisitFuncPtr action);
-void Postorder(BTreeNode * bt, VisitFuncPtr action);
+void PostorderTraverse(BTreeNode * bt, VisitFuncPtr action);
 
 #endif
