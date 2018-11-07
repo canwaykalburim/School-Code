@@ -21,13 +21,10 @@
     <ClCompile Include="BinaryTree2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="BinaryTree.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="ListBaseStack.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="ListBaseStackMain.c">
+    <ClCompile Include="ExpressionMain.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
@@ -38,13 +35,7 @@
     <ClInclude Include="BinaryTree2.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="common.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="ListBaseStack.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="BinaryTree.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
