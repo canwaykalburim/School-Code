@@ -10,7 +10,8 @@ const int size_c = 200;
 extern int x = 50 , y = 2;
 
 // 1일 차
-void Pro() {
+void Pro()
+{
 	int a = 10;
 	float b = 2.5;
 	char c = 'e';
@@ -21,28 +22,33 @@ void Pro() {
 }
 
 // 2일 차
-class Person {
+class Person
+{
 	int man, woman, sum;
 public:
 	void itset(int a, int b);
 	int itsum();
 };
-void Person::itset(int a, int b) {
+void Person::itset(int a, int b)
+{
 	man = a;
 	woman = b;
 }
-int Person::itsum() {
+int Person::itsum()
+{
 	sum = man + woman;
 	return sum;
 }
-void Pro2() {
+void Pro2()
+{
 	Person p1, p2;
 	p1.itset(2, 3);
 	p2.itset(20, 30);
 	cout << " sum1: " << p1.itsum() << "\n sum2: " << p2.itsum() << endl;
 }
 
-void Pro3() {
+void Pro3()
+{
 	int data = 100;
 	int &rdata = data;
 	cout << data << ", " << rdata << endl;
@@ -64,7 +70,8 @@ void Pro4()
 
 int sum(int x, int y) { return x + y; }
 
-void Pro5() {
+void Pro5() 
+{
 	cout << "int는 " << sizeof(int) << "byte이다." << endl;
 	cout << "char는 " << sizeof(char) << "byte이다." << endl;
 	cout << "short는 " << sizeof(short) << "byte이다." << endl;
@@ -76,20 +83,24 @@ void Pro6() {
 	int a2[3] = { 1,2,3 };
 	int b2[2][2] = { {1, 2}, {3, 4} };
 
-	for (int i = 0; i < 3; i++) {
-		for (int j = 0; j < 2; j++) {
+	for (int i = 0; i < 3; i++)
+	{
+		for (int j = 0; j < 2; j++)
+		{
 			cout << b2[i][j] << endl;
 		}
 	}
 }
 
-void Pro7() {
+void Pro7()
+{
 	cout << "10진 정수형 상수: " << 80 << endl;
 	cout << "8진 정수형 상수: " << 0120 << endl;
 	cout << "16진 정수형 상수: " << 0x50 << endl;
 }
 
-void Pro8() {
+void Pro8() 
+{
 	char MunJa = 'a';
 	int Gap = 34;
 	float Silsu = 212.34, Hap;
@@ -97,21 +108,25 @@ void Pro8() {
 	cout << "Hap의 값: " << Hap << endl;
 }
 
-void Pro9() {
+void Pro9()
+{
 	float Gap1 = 2.11, Gap2 = 13.5;
 	cout << "Gap1 + gap2: " << Gap1 + Gap2 << endl;
 	cout << "gap2 / Gap1: " << (int)Gap2 / (int)Gap1 << endl;
 }
 
-void Pro10() {
+void Pro10() 
+{
 	int a = 10, b = 5;
 	cout << "x * y : " << x * y << endl;
 	cout << "a / b : " << a / b << "\n";
 }
 
-void Pro11() {
+void Pro11()
+{
 	register int i;
-	for (i = 4; i > 0; i--) {
+	for (i = 4; i > 0; i--) 
+	{
 		register int j = 10;
 		j *= i;
 		cout << j << "\t";
@@ -119,7 +134,8 @@ void Pro11() {
 	cout << i << endl;
 }
 
-void Pro12() {
+void Pro12()
+{
 	int x = 2, yd;
 	yd = x * size_d;
 	cout << "yd: " << yd << endl;
@@ -129,7 +145,8 @@ void Pro12() {
 	cout << "yc: " << yc << endl;
 }
 
-void Pro13() {
+void Pro13()
+{
 	unsigned short int Day;
 	enum Week { Mon, Tue, Wed, Thu, Fri, Sat, Sun };
 	Week Weekend;
@@ -144,7 +161,8 @@ void Pro13() {
 }
 
 // 3일차
-void Pro14() {
+void Pro14() 
+{
 	char Name[SizeName];
 	char Address[SizeAdd];
 
@@ -155,7 +173,8 @@ void Pro14() {
 	cout << "이름은" << Name <<"이고, " << "주소는" <<Address << "입니다." << endl;
 }
 
-void Pro15() {
+void Pro15()
+{
 	int x = 12, y = 1234;
 
 	cout << "10진수:" << dec << x << endl;
@@ -167,7 +186,8 @@ void Pro15() {
 	cout << setw(10) << y << endl;
 }
 
-void Pro16() {
+void Pro16() 
+{
 	float x = 12.30;
 	float y = 10.0 + 2.0 / 3.0;
 	cout.precision(4);
@@ -175,7 +195,8 @@ void Pro16() {
 	cout << "y: " << y << endl;
 }
 
-void Pro17() {
+void Pro17()
+{
 	float x = 12.30;
 	float y = 10.0 + 2.0 / 3.0;
 	cout.setf(ios::showpoint);
@@ -186,7 +207,8 @@ void Pro17() {
 	cout << "y: " << y << endl;
 }
 
-void Pro18() {
+void Pro18()
+{
 	int ion = 30;
 
 	cout << "The Number of ion" << endl;
@@ -199,7 +221,8 @@ void Pro18() {
 	cout << ion << hex << endl;
 }
 
-void Pro19() {
+void Pro19()
+{
 	int ion = 0;
 
 	cout << "자리 위치 지정\n" << endl;
@@ -207,26 +230,30 @@ void Pro19() {
 	cout.setf(ios::showpos);
 	cout.setf(ios::right, ios::adjustfield);
 	cout.setf(ios::showpoint);
-	while (ion < 3) {
+	while (ion < 3) 
+	{
 		cout.width(13);
 		cout << ++ion << endl;
 	}
 	cout << "--------------\n";
 	cout.setf(ios::left, ios::adjustfield);
-	while (ion > 0) {
+	while (ion > 0) 
+	{
 		cout.width(13);
 		cout << ion-- << endl;
 	}
 	cout << "--------------\n";
 	cout.setf(ios::internal, ios::adjustfield);
-	while (ion < 3) {
+	while (ion < 3)
+	{
 		cout.width(13);
 		cout << ++ion << endl;
 	}
 	cout << "--------------\n";
 }
 
-void Pro20() {
+void Pro20() 
+{
 	const int Length = 30;
 	char Name[Length];
 	char Address[Length];
@@ -239,7 +266,8 @@ void Pro20() {
 }
 
 // 4일차
-void Pro21() {
+void Pro21() 
+{
 	int x = 12, y = 8, z = 3, r1, r2;
 	char ch = 'b';
 	r1 = x > y > z;
@@ -248,7 +276,8 @@ void Pro21() {
 	cout << "r2 = " << r2 << endl;
 }
 
-void Pro22() {
+void Pro22() 
+{
 	int a = 10, b = 9, c;
 	a++;	b++;
 	cout << "a: " << a << " b: " << b << endl;
@@ -261,37 +290,44 @@ void Pro22() {
 	cout << "a: " << c << " b: " << b << endl;
 }
 
-void Pro23() {
+void Pro23() 
+{
 	int x, y, r1, r2;
 	x = 5;	y = 7;
 	r1 = ++x - 1;
 	r2 = x++ + --y;
 	cout << "r1: " << r1 << endl;
 	cout << "r2: " << r2 << endl;
-
 }
 
-void Pro24() {
-	for (int fr = 2; fr < 10; fr++) {
-		for (int bh = 1; bh < 10; bh++) {
+void Pro24()
+{
+	for (int fr = 2; fr < 10; fr++)
+	{
+		for (int bh = 1; bh < 10; bh++)
+		{
 			cout << fr << " X "<< bh << "= " << fr * bh << endl;
 		}
 		cout << endl;
 	}
 }
 
-void Pro25() {
+void Pro25()
+{
 	int nInput;
 	cin >> nInput;
 	cout << endl;
-	for (int Ust = 1; Ust <= nInput * 2; Ust++) {
+	for (int Ust = 1; Ust <= nInput * 2; Ust++)
+	{
 		if (Ust <= nInput) {
-			for (int Dst = 1; Dst <= Ust; Dst++) {
+			for (int Dst = 1; Dst <= Ust; Dst++) 
+			{
 				cout << "*";
 			}
 		}
 		else {
-			for (int Dst = nInput * 2; Dst >= Ust; Dst--) {
+			for (int Dst = nInput * 2; Dst >= Ust; Dst--)
+			{
 				cout << "*";
 			}
 		}
@@ -299,7 +335,106 @@ void Pro25() {
 	}
 }
 
-int main(void) {
+// 5 ~ 6일차
+void Pro26()
+{
+	struct student
+	{
+		int id;
+		int score;
+
+	} s1, *s2;
+	s1.score = 85;
+	s1.id = 11031;
+	s2->score = 90;
+	s2->id = 11032;
+	cout << s2->id << " " << endl;
+}
+
+void Pro27() 
+{
+	class student
+	{
+		int id;
+		int score;
+	public:
+		void reset() { id = 0; score = 0; }
+		void ser_id(int id_value) { id = id_value; }
+		void ser_socre(int score_value) { id = score_value; }
+		void print()
+		{
+			cout << "id: " << id << endl;
+			cout << "score: " << score << endl;
+		}
+	};
+}
+
+class student
+{
+	int id, score;
+public:
+	static int how_many;
+	void reset() { id = 0; score = 0; }
+	void set(int id_value, int score_value)
+	{ id = id_value; score = score_value; }
+	void print()
+	{
+		cout << "id: " << id << endl;
+		cout << "score: " << score << endl;
+		cout << "how_many: " << how_many << endl;
+	}
+
+};
+
+int student::how_many = 0;
+
+void Pro28()
+{
+	student s1, s2, s3;
+	s1.set(11031, 85);
+	student::how_many++;
+	s1.print();
+	s1.set(11032, 90);
+}
+
+class WhoAmI
+{
+public:
+	int id;
+	WhoAmI(int id_arg);
+	void ShowYourSelf() const;
+};
+
+WhoAmI::WhoAmI(int id_arg)
+{
+	id = id_arg;
+}
+
+void WhoAmI::ShowYourSelf() const
+{
+	cout << "ID: " << id << "\n" << "this: " << this << endl;
+	cout << endl;
+}
+
+void Pro29()
+{
+	// 세 개의 객체를 만든다
+	WhoAmI obj1(1);
+	WhoAmI obj2(2);
+	WhoAmI obj3(3);
+
+	// 객체들의 정보를 출력한다
+	obj1.ShowYourSelf();
+	obj2.ShowYourSelf();
+	obj3.ShowYourSelf();
+
+	cout << "&obj1: " << &obj1 << endl;
+	cout << "&obj2: " << &obj2 << endl;
+	cout << "&obj3: " << &obj3 << endl;
+}
+
+void subMain() 
+{
 	//Pro();
 	//Pro2();
 	//Pro3();
@@ -324,7 +459,15 @@ int main(void) {
 	//Pro22();
 	//Pro23();
 	//Pro24();
-	Pro25();
+	//Pro25();
+	//Pro26();
+	//Pro27();
+	//Pro28();
+	Pro29();
+}
 
+int main(void)
+{
+	subMain();
 	return 0;
 }
