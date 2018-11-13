@@ -1,4 +1,4 @@
 ﻿  main.c
-c:\users\dsm2018\desktop\소스 코드\schoo_lcode\os_class\os_class\main.c(12): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-c:\users\dsm2018\desktop\소스 코드\schoo_lcode\os_class\os_class\main.c(27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
-  OS_class.vcxproj -> C:\Users\DSM2018\Desktop\소스 코드\Schoo_lCode\OS_class\Debug\OS_class.exe
+c:\users\dsm2018\desktop\소스 코드\school_code\os_class\os_class\main.c(12): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+c:\users\dsm2018\desktop\소스 코드\school_code\os_class\os_class\main.c(27): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+  OS_class.vcxproj -> C:\Users\DSM2018\Desktop\소스 코드\School_Code\OS_class\Debug\OS_class.exe
