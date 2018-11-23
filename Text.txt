@@ -1,2 +1,2 @@
-SchoolCode
+School_Code
 학교에서 한 것들
