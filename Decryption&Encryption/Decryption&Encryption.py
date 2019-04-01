@@ -1,10 +1,8 @@
 print("암호화 할 평문을 입력하세요: ")
-
 secret = input()
 secret1 = ""
 
 print("변경할 만큼의 숫자를 입력하세요: ")
-
 k = int(input())
 
 for add in secret:
