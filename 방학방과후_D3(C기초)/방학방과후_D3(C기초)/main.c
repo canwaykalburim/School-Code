@@ -49,29 +49,32 @@ void a3()	//각 자릿수 더하기
 
 void a4()	// 자아도취 수
 {
-	int inputNum, sum = 0;
-	int tmp[4] = { 0 };
+	int inputNum, i = 0, sum = 0;
 
-	printf("값을 입력하세요(0 ~ 9999) : ");
+	printf("확인 할 수를 입력하세요 : ");
 	scanf("%d", &inputNum);
 
-	int inputTmp = inputNum;
+	int inputCnt = inputNum;
+	int inputCmp = inputNum;
 
-	for (int i = 0; i < 4; i++)
+	while (inputCnt > 0)
 	{
-		tmp[i] += inputNum % 10;
-
-		if (tmp[i] == 0)
-		{
-			for (int j = 0; j < (4 - i); j++) {
-				sum = pow(tmp[j], (4 - i));
-			}
-			break;
-		}
-		inputNum /= 10;
+		i++;
+		inputCnt /= 10;
 	}
 
-	inputTmp == sum ? printf("자아 도취 수입니다.") : printf("자아 도취 수가 아닙니다.");
+	int numTmp[4];
+
+	for (int k = 0; k < i; k++)
+	{
+		numTmp[k] = inputNum % 10;
+		inputNum /= 10;
+
+		numTmp[k] = (int)pow(numTmp[k], i);
+		sum += numTmp[k];
+	}
+
+	sum == inputCmp ? printf("자아도취 수입니다.") : printf("자아도취 수가 아닙니다.");
 }
 
 void a5()
@@ -97,6 +100,6 @@ int main(void)
 	//a1();
 	//a2();
 	//a3();
-	//a4();			// 실패
+	//a4();
 	//a5();
 }

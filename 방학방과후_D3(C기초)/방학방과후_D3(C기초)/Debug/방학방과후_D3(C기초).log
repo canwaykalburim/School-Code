@@ -1,11 +1,10 @@
 ﻿  main.c
-C:\Users\user\Desktop\소스코드\_C\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(11): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\Desktop\소스코드\Git\School_Code\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(11): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
-C:\Users\user\Desktop\소스코드\_C\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(40): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\Desktop\소스코드\Git\School_Code\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(40): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
-C:\Users\user\Desktop\소스코드\_C\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(67): warning C4244: '=': 'double'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-C:\Users\user\Desktop\소스코드\_C\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(56): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\Desktop\소스코드\Git\School_Code\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(55): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
-C:\Users\user\Desktop\소스코드\_C\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(85): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\user\Desktop\소스코드\Git\School_Code\방학방과후_D3(C기초)\방학방과후_D3(C기초)\main.c(88): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   D:\Windows Kits\10\Include\10.0.17763.0\ucrt\stdio.h(1274): note: 'scanf' 선언을 참조하십시오.
-  방학방과후_D3(C기초).vcxproj -> C:\Users\user\Desktop\소스코드\_C\방학방과후_D3(C기초)\Debug\방학방과후_D3(C기초).exe
+  방학방과후_D3(C기초).vcxproj -> C:\Users\user\Desktop\소스코드\Git\School_Code\방학방과후_D3(C기초)\Debug\방학방과후_D3(C기초).exe
