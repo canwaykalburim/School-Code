@@ -1,0 +1,6 @@
+﻿  main.c
+C:\Users\user\Desktop\소스코드\_C\방학방과후_D4(C기초)\방학방과후_D4(C기초)\main.c(54): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  D:\Windows Kits\10\Include\10.0.17763.0\ucrt\string.h(440): note: 'strtok' 선언을 참조하십시오.
+C:\Users\user\Desktop\소스코드\_C\방학방과후_D4(C기초)\방학방과후_D4(C기초)\main.c(59): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  D:\Windows Kits\10\Include\10.0.17763.0\ucrt\string.h(440): note: 'strtok' 선언을 참조하십시오.
+  방학방과후_D4(C기초).vcxproj -> C:\Users\user\Desktop\소스코드\_C\방학방과후_D4(C기초)\Debug\방학방과후_D4(C기초).exe
