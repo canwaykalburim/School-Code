@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>끝말잇기</title>
+  </head>
+  <body>
+    <script>
+      let startMessage = "시작하기";
+      let firstWord = "감자";
+      let now = firstWord;
+      alert(startMessage);
+
+      while (1) {
+        let next = prompt("단어를 입력하세요\n제시어 : " + "[" + now + "]")
+        if (next[0] == now[now.length - 1]) {
+          now = next;
+          alert("잘하셨습니다");
+        }
+        else {
+          alert("다시 입력하세요");
+        }
+      }
+    </script>
+  </body>
+</html>
