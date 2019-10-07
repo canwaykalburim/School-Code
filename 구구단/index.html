@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>랜덤 구구단</title>
+  </head>
+  <body>
+    <script>
+      alert("랜덤 구구단입니다");
+      while (1) {
+        let a = Math.floor(Math.random() * 9) + 1;
+        let b = Math.floor(Math.random() * 9) + 1;
+        while (1) {
+          let answer = prompt(a + " X " + b + " = " + "?");
+          if (answer == (a * b)) {
+            alert("정답입니다");
+            break;
+          }
+          else {
+            alert("오답입니다");
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
